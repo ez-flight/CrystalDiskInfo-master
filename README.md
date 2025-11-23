@@ -27,15 +27,16 @@
 
 ```
 windows_hdd_collector/
-├── cpp/                    # C++ консольная утилита
-│   ├── src/               # Исходный код
-│   ├── build/             # Собранные файлы
-│   └── CMakeLists.txt     # CMake конфигурация
-└── CrystalDiskInfo-master/  # Модифицированный CrystalDiskInfo
-    └── CrystalDiskInfo-master/
-        ├── DataCollector.* # Модуль сбора и отправки данных
-        ├── HttpClient.*    # HTTP клиент
-        └── ...
+├── CrystalDiskInfo-master/
+│   ├── cpp/                  # C++ консольная утилита
+│   │   ├── src/             # Исходный код
+│   │   ├── build/           # Собранные файлы
+│   │   └── CMakeLists.txt   # CMake конфигурация
+│   └── CrystalDiskInfo-master/
+│       ├── DataCollector.*  # Модуль сбора и отправки данных
+│       ├── HttpClient.*     # HTTP клиент
+│       └── ...
+└── README.md
 ```
 
 ## Сборка
@@ -51,7 +52,7 @@ windows_hdd_collector/
 ### C++ консольная утилита
 
 ```bash
-cd cpp
+cd CrystalDiskInfo-master/cpp
 mkdir build
 cd build
 cmake .. -G "NMake Makefiles"
